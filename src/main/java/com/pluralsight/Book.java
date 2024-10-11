@@ -29,9 +29,9 @@ public class Book {
         if (isCheckedOut) {
             this.isCheckedOut = false;
             this.checkedOutTo = null;
-            System.out.println(title + " has been successfully checked in. Thank you!");
+            System.out.println("\n" + title + " has been successfully checked in. Thank you!");
         } else {
-            System.out.println(title + " is not currently checked out. Have at ye.");
+            System.out.println("\n" + title + " is not currently checked out. Have at ye.");
         }
     }
 
@@ -39,9 +39,9 @@ public class Book {
         if (!isCheckedOut) {
             this.isCheckedOut = true;
             this.checkedOutTo = name;
-            System.out.println(title + " has been checked out by: " + name);
+            System.out.println("\n" + title + " has been checked out by: " + name);
         } else {
-            System.out.println(title + " is already checked out, sorry.");
+            System.out.println("\n" + title + " is already checked out, sorry.");
         }
     }
 
